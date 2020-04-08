@@ -2,21 +2,14 @@ require 'rails_helper'
 
 RSpec.describe Job, type: :model do
   context "Validations Check" do
-    it 'ensure title is presence' do
-      job = Job.new(description: 'some description', apply: 'instructions')
-      expect(job).not_to be_valid
-    end
-    it 'ensure description is presence' do
-      job = Job.new(title: 'some title', apply: 'instructions')
-      expect(job).not_to be_valid
-    end
-    it 'ensure title is presence' do
-      job = Job.new(description: 'some description', title: 'title')
-      expect(job).not_to be_valid
-    end
-    it 'saves new Job with all attributes' do
-      job = Job.new(title: 'some title', description: 'some description', apply: 'instructions').save
-      expect(job).to eq(true)
-    end
+    it { should validate_presence_of(:title) }
+    it { should validate_presence_of(:description) }    
+    it { should validate_presence_of(:apply) }
+    
+    it { should validate_length_of(:title).is_at_least(10).is_at_most(120) }
+  end
+
+  describe 'Assoications Check' do
+    it { should belong_to(:category) } 
   end
 end
