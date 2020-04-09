@@ -12,4 +12,11 @@ RSpec.describe Job, type: :model do
   describe 'Assoications Check' do
     it { should belong_to(:category) } 
   end
+
+  describe 'Factories' do
+    it 'validates test data through factories' do
+      job = build(:job)
+      expect(job.save).to eq(true)
+    end
+  end
 end

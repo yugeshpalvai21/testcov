@@ -58,4 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :test do
   gem 'simplecov', require: false
   gem 'shoulda-matchers'
+  gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
+  gem 'ffaker', '~> 2.14'
 end
