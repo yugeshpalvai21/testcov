@@ -1,24 +1,24 @@
-# README
+### Experienting Rails App With Test Suite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### Topics Included
 
-Things you may want to cover:
+- TDD/BDD Approach
+- Setting Up Test Suite
+- Gem Integration
+- Gems Configurations
+- Types Of Testing
+  - Unit
+  - Request
+  - Acceptence or End-to-End
+  - Mailer
+  - Background Job
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Tech Stack Included
+  - Ruby
+  - Rails
+  - RSpec
+  - Capybara
+  - Shoulda Matchers
+  - FactoryBot
+  - FFaker
+  - Database Cleaner
