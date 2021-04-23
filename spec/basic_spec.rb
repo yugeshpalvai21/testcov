@@ -7,7 +7,7 @@ RSpec.describe "Outer Example Group" do
 
   context 'Other Nested Example Group' do
     it 'test simple calculation of a,b substraction' do
-      expect(10-5).to eq 5
+      expect(10-4).to eq 6
     end
   end
 end
